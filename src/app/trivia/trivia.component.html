@@ -1,0 +1,9 @@
+<h2>Vraag 1</h2>
+
+<h3>{{granCanariaQuestion.question}}?</h3>
+<input type="text" placeholder="Vul hier in" [(ngModel)]="granCanariaQuestion.input">
+<div *ngIf="granCanariaQuestion.answer === granCanariaQuestion.input">
+  <form target="_blank" action="http://192.168.1.9/sinterkluis/sendCode?input={{granCanariaQuestion.code}}">
+    <button type="submit">Goed! Klik hier om te openen</button>
+  </form>
+</div>
