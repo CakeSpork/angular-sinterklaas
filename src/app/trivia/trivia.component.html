@@ -1,5 +1,5 @@
 
-<h2>{{triviaItem.question}}?</h2>
+<h2>{{triviaItem.question}}</h2>
 <form (ngSubmit)="onSubmit()">
   <input autocomplete="off" type="text" placeholder="Vul hier in" [(ngModel)]="triviaItem.input" name="triviaitemInput">
   <div *ngIf="isRightAnswer()">
@@ -10,6 +10,10 @@
     <button type="submit" name="attempt">Proberen naar de kluis te sturen?</button>
   </div>
 </form>
+
+<div class="imageContainer" *ngIf="triviaItem.image">
+  <img src="/assets/trivia/{{triviaItem.image}}" alt="{{triviaItem.title}}">
+</div>
 
 <div class="programmeurPiet" *ngIf="apiGetRequest !== undefined">
   PROGRAMMEUR PIET INFO: {{apiGetRequest | json}}

@@ -29,6 +29,12 @@ h4 {
   margin: 0;
   margin-top: 5em;
 }
+
+.module div {
+  font-size: 130%;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 .module {
   padding: 20px;
   text-align: center;
@@ -38,6 +44,11 @@ h4 {
   background-color: #607D8B;
   border-radius: 2px;
 }
+.module {
+  background-size: 300px;
+  background-position-y: 60%;
+}
+
 .module:hover {
   background-color: #EEE;
   cursor: pointer;
@@ -63,3 +74,10 @@ h4 {
   }
 }
 
+.solved {
+  text-decoration: line-through
+}
+.unsolved {
+  font-weight: 900;
+  color: #ff5973;
+}

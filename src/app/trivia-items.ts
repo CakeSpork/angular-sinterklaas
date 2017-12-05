@@ -2,38 +2,42 @@ import { TriviaItem } from './trivia/TriviaItem';
 
 export const TRIVIA_ITEMS: TriviaItem[] = [
   {
-    title: 'Q1',
-    question: 'Q1',
-    answer: 'A1',
-    input: '',
-    code: '5648'
+    title: 'Onbewoond',
+    question: 'Welk eiland wordt hier aangewezen?',
+    answer: 'Tenerife',
+    image: 'mysteryIsland.jpg',
+    code: '3264',
+    input: ''
   },
   {
-    title: 'Q2',
-    question: 'Q2',
-    answer: 'A2',
-    input: '',
-    code: '3264'
+    title: 'Verschil',
+    question: 'In welke maand is Delta geboren?',
+    answer: 'Maart',
+    image: 'deltaSlaapt.jpg',
+    code: '5648',
+    input: ''
   },
   {
-    title: 'Q3',
-    question: 'Q3',
-    answer: 'A3',
-    input: '',
-    code: '8429'
+    title: 'Boarding',
+    question: 'Wat is het bekendste Snowboardmerk?',
+    answer: 'Burton',
+    code: '8429',
+    input: ''
   },
   {
-    title: 'Q4',
-    question: 'Q4',
-    answer: 'A4',
-    input: '',
-    code: '6286'
+    title: 'Chanel',
+    question: 'In welk jaar werd Chanel opgericht?',
+    answer: '1910',
+    code: '6286',
+    image: 'coco.jpg',
+    input: ''
   },
   {
-    title: 'Q5',
-    question: 'Q5',
-    answer: 'A5',
-    input: '',
-    code: '3419'
+    title: 'Vulkanisch',
+    question: 'Welke vulkaan zien we hier?',
+    answer: 'Kronotsky',
+    code: '3419',
+    image: 'mysteryVolcano.jpg',
+    input: ''
   }
 ];
