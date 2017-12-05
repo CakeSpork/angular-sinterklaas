@@ -4,11 +4,14 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -H 0.0.0.0",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "dockerize": "npm run docker:build & npm run docker:push",
+    "docker:build": "docker build -t guusc/angular-sinterklaas .",
+    "docker:push": "docker push guusc/angular-sinterklaas"
   },
   "private": true,
   "dependencies": {
