@@ -3,7 +3,7 @@ import { TriviaItem } from './trivia/TriviaItem';
 export const TRIVIA_ITEMS: TriviaItem[] = [
   {
     title: 'Onbewoond',
-    question: 'Al dobberend in de oceaan, welk eiland wijst deze persoon hier aan?',
+    question: 'Al dobberend in de oceaan, welk eiland wijst deze hand aan?',
     answer: 'Tenerife',
     image: 'mysteryIsland.jpg',
     code: '3264',
