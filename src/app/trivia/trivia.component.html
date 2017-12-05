@@ -1,9 +1,16 @@
-<h2>Vraag 1</h2>
 
-<h3>{{granCanariaQuestion.question}}?</h3>
-<input type="text" placeholder="Vul hier in" [(ngModel)]="granCanariaQuestion.input">
-<div *ngIf="granCanariaQuestion.answer === granCanariaQuestion.input">
-  <form target="_blank" action="http://192.168.1.9/sinterkluis/sendCode?input={{granCanariaQuestion.code}}">
-    <button type="submit">Goed! Klik hier om te openen</button>
-  </form>
+<h2>{{triviaItem.question}}?</h2>
+<form (ngSubmit)="onSubmit()">
+  <input autocomplete="off" type="text" placeholder="Vul hier in" [(ngModel)]="triviaItem.input" name="triviaitemInput">
+  <div *ngIf="isRightAnswer()">
+      <button type="submit" name="correct">Proberen naar de kluis te sturen!?</button>
+  </div>
+
+  <div *ngIf="!isRightAnswer()">
+    <button type="submit" name="attempt">Proberen naar de kluis te sturen?</button>
+  </div>
+</form>
+
+<div class="programmeurPiet" *ngIf="apiGetRequest !== undefined">
+  PROGRAMMEUR PIET INFO: {{apiGetRequest | json}}
 </div>
