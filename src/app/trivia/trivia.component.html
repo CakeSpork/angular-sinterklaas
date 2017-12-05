@@ -1,5 +1,10 @@
 
+<div class="imageContainer" *ngIf="triviaItem.image">
+  <img src="/assets/trivia/{{triviaItem.image}}" alt="{{triviaItem.title}}">
+</div>
+
 <h2>{{triviaItem.question}}</h2>
+
 <form (ngSubmit)="onSubmit()">
   <input autocomplete="off" type="text" placeholder="Vul hier in" [(ngModel)]="triviaItem.input" name="triviaitemInput">
   <div *ngIf="isRightAnswer()">
@@ -11,9 +16,6 @@
   </div>
 </form>
 
-<div class="imageContainer" *ngIf="triviaItem.image">
-  <img src="/assets/trivia/{{triviaItem.image}}" alt="{{triviaItem.title}}">
-</div>
 
 <div class="programmeurPiet" *ngIf="apiGetRequest !== undefined">
   PROGRAMMEUR PIET INFO: {{apiGetRequest | json}}

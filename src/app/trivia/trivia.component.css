@@ -11,12 +11,13 @@ h2 {
 .imageContainer {
   z-index: -1;
   position: absolute;
-  top: 5em;
+  top: 14em;
   left: 35em;
 }
+
 .imageContainer img {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 450px;
+  max-height: 450px;
 }
 
 form{
